@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adobe PLP</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar"></nav>
+      <!-- Navigation will be dynamically inserted here -->
+    </header>
+
+    <!-- Drawer (initially hidden) -->
+    <div class="drawer">
+      <!-- Drawer content (nav-tabs and filters) will be dynamically loaded here -->
+    </div>
+
+    <!-- Main Banner Section -->
+    <div class="banner"></div>
+
+    <!-- Filter and Product List Section -->
+    <div class="content-wrapper">
+      <aside class="filter-list">
+        <h3>Filters</h3>
+        <div class="filters-container">
+          <!-- Filters will be dynamically loaded here -->
+        </div>
+      </aside>
+
+      <div class="product-list-wrapper">
+        <div class="sort-count-box">
+          <!-- Item count display -->
+          <div class="item-count">0 products displayed</div>
+
+          <!-- Sort Filter Dropdown -->
+          <div class="sort-container">
+            <!-- Optional label for the Sort By dropdown -->
+            <!-- <label class="sort-select-label" for="sort-select">Sort by :</label> -->
+            <select class="sort-select">
+              <option value="price-asc">Sort By Price: Low to High </option>
+              <option value="price-desc">Sort By Price: High to Low</option>
+            </select>
+          </div>
+        </div>
+        <div class="product-list"></div>
+        <button class="load-more">Read More</button>
+      </div>
+    </div>
+
+  <script src="dist/main.bundle.js"></script>
+  </body>
+</html>

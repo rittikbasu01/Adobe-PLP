@@ -1,0 +1,105 @@
+
+/* Product List Wrapper */
+.product-list-wrapper {
+    flex: 4;
+    overflow-y: auto;
+    max-height: calc(100vh - 15rem);
+    padding-right: 1rem;
+  }
+ 
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; 
+  } 
+
+
+  .prod-img-container{
+    height:18rem;
+    width: 100%;
+  }
+  
+  .prod-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center; 
+  }
+
+  .product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    flex: 1 0 calc(33.333% - 1rem);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border: 1px solid #3030304e;
+    border-radius: 8px;
+    padding: 1rem;
+  }
+
+  .product-card .price {
+    align-self: self-start;
+    color: #1363df;
+    
+  }
+  
+  .product-card button {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #1363df;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .product-card button:hover {
+    background-color: #0d4fbd;
+  }
+  
+  /* Load More Button */
+  .load-more {
+  
+    background-color: #7d7d7e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .load-more:hover {
+    background-color: #5e5e5e;
+  }
+  
+  /* Responsive Breakpoints */
+  
+  /* Mobile (320px) */
+  @media (max-width: 480px) {
+    .product-card {
+      flex: 1 0 calc(50% - 1rem); /* 2 cards per row on mobile */
+       /* Adjust the height for mobile screens */
+    }
+  }
+  
+  /* Tablet (768px) */
+  @media (max-width: 768px) {
+    .product-card {
+      flex: 1 0 calc(50% - 1rem); /* 2 cards per row on tablet */
+       /* Adjust the height for tablet screens */
+    }
+  }
+  
+  /* Desktop Small (1024px) */
+  @media (min-width: 1024px) {
+    .product-card {
+      flex: 1 0 calc(33.333% - 1rem); /* 3 cards per row on desktop */
+      
+    }
+  }
+ 
